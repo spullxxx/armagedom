@@ -37,9 +37,8 @@ Um sistema de agentes que roda no meu computador e faz trabalho real de engenhar
 18. [Qualidade, testes e auditorias](#18-qualidade-testes-e-auditorias)
 19. [Benchmarks](#19-benchmarks)
 20. [Linha do tempo](#20-linha-do-tempo)
-21. [Limitações conhecidas](#21-limitações-conhecidas)
-22. [Stack completa](#22-stack-completa)
-23. [Status](#23-status)
+21. [Stack completa](#21-stack-completa)
+22. [Status](#22-status)
 
 ---
 
@@ -421,7 +420,7 @@ Teste de correção e escala com dados sintéticos:
 | 1.000 | 1 / 1 / 1 | 1,0 | 59 ms |
 | 10.000 | 1 / 1 / 1 | 1,0 | 515 ms |
 
-Correção, isolamento, proveniência, substituição e idempotência foram mantidos até **100 mil registros**, inclusive com várias threads e processos. O próximo passo é otimizar a latência nessa escala.
+Correção, isolamento, proveniência, substituição e idempotência foram mantidos até **100 mil registros**, inclusive com várias threads e processos.
 
 ## 20. Linha do tempo
 
@@ -435,15 +434,7 @@ Correção, isolamento, proveniência, substituição e idempotência foram mant
 | **Marco 6** | Experiência de IDE e prévia visual |
 | **Depois** | Constituição no runtime, memória hierárquica, RAG endurecido e auditorias independentes |
 
-## 21. Limitações conhecidas
-
-Documentar limites faz parte do projeto:
-
-- A latência da memória cresce muito acima de 10 mil registros; o caminho de busca precisa de otimização.
-- Nem toda ação passa ainda por um ponto único de verificação constitucional; unificar isso é a próxima etapa da arquitetura.
-- Não há teste de carga nem de alta disponibilidade: é um sistema pessoal, pensado para uma máquina.
-
-## 22. Stack completa
+## 21. Stack completa
 
 | Camada | Tecnologias |
 | --- | --- |
@@ -455,7 +446,7 @@ Documentar limites faz parte do projeto:
 | **Frontend** | React 19, TypeScript, Vite, Tailwind 4, Three.js, Monaco, Motion |
 | **Qualidade** | pytest, Playwright, auditorias independentes |
 
-## 23. Status
+## 22. Status
 
 **Funcional e em evolução.** O código não é aberto; este repositório documenta o projeto.
 
